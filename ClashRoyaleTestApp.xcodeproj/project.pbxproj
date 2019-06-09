@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		03950D5B13C8742FBA0506C0 /* Pods_ClashRoyaleTestApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83245DCBB1F1290F2AFDE274 /* Pods_ClashRoyaleTestApp.framework */; };
 		195A033822AC8589006AC05C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 195A033722AC8589006AC05C /* AppDelegate.swift */; };
 		195A033A22AC8589006AC05C /* InfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 195A033922AC8589006AC05C /* InfoViewController.swift */; };
 		195A033D22AC8589006AC05C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 195A033B22AC8589006AC05C /* Main.storyboard */; };
@@ -18,6 +19,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1692CA508668C4FBCF6507DE /* Pods-ClashRoyaleTestApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ClashRoyaleTestApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-ClashRoyaleTestApp/Pods-ClashRoyaleTestApp.release.xcconfig"; sourceTree = "<group>"; };
 		195A033422AC8589006AC05C /* ClashRoyaleTestApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ClashRoyaleTestApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		195A033722AC8589006AC05C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		195A033922AC8589006AC05C /* InfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoViewController.swift; sourceTree = "<group>"; };
@@ -28,6 +30,8 @@
 		195A034A22AC9982006AC05C /* ShowCardsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShowCardsViewController.swift; sourceTree = "<group>"; };
 		195A034D22AC9A00006AC05C /* CardModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardModel.swift; sourceTree = "<group>"; };
 		195A034F22ACA45A006AC05C /* CardTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardTableViewCell.swift; sourceTree = "<group>"; };
+		6B6E8FD485C683822C86DEB2 /* Pods-ClashRoyaleTestApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ClashRoyaleTestApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ClashRoyaleTestApp/Pods-ClashRoyaleTestApp.debug.xcconfig"; sourceTree = "<group>"; };
+		83245DCBB1F1290F2AFDE274 /* Pods_ClashRoyaleTestApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ClashRoyaleTestApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,17 +39,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				03950D5B13C8742FBA0506C0 /* Pods_ClashRoyaleTestApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		021E4BEAE561954D2E88B7A9 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6B6E8FD485C683822C86DEB2 /* Pods-ClashRoyaleTestApp.debug.xcconfig */,
+				1692CA508668C4FBCF6507DE /* Pods-ClashRoyaleTestApp.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		195A032B22AC8589006AC05C = {
 			isa = PBXGroup;
 			children = (
 				195A033622AC8589006AC05C /* ClashRoyaleTestApp */,
 				195A033522AC8589006AC05C /* Products */,
+				021E4BEAE561954D2E88B7A9 /* Pods */,
+				C0C2E4D2728402FE38B97830 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -89,6 +105,14 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
+		C0C2E4D2728402FE38B97830 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				83245DCBB1F1290F2AFDE274 /* Pods_ClashRoyaleTestApp.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -96,9 +120,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 195A034622AC858C006AC05C /* Build configuration list for PBXNativeTarget "ClashRoyaleTestApp" */;
 			buildPhases = (
+				A380EACF5AA2A42E0521E508 /* [CP] Check Pods Manifest.lock */,
 				195A033022AC8589006AC05C /* Sources */,
 				195A033122AC8589006AC05C /* Frameworks */,
 				195A033222AC8589006AC05C /* Resources */,
+				FCAEB07F8A74C3B8965AF84A /* [CP] Embed Pods Frameworks */,
+				4D87F402C0FEDA23416581E9 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -154,6 +181,64 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4D87F402C0FEDA23416581E9 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ClashRoyaleTestApp/Pods-ClashRoyaleTestApp-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A380EACF5AA2A42E0521E508 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ClashRoyaleTestApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FCAEB07F8A74C3B8965AF84A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-ClashRoyaleTestApp/Pods-ClashRoyaleTestApp-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ClashRoyaleTestApp/Pods-ClashRoyaleTestApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		195A033022AC8589006AC05C /* Sources */ = {
@@ -308,6 +393,7 @@
 		};
 		195A034722AC858C006AC05C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6B6E8FD485C683822C86DEB2 /* Pods-ClashRoyaleTestApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -326,6 +412,7 @@
 		};
 		195A034822AC858C006AC05C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1692CA508668C4FBCF6507DE /* Pods-ClashRoyaleTestApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
