@@ -1,9 +1,9 @@
 //
 //  AppDelegate.swift
-//  clashRoyaleTestApp
+//  ClashRoyaleTestApp
 //
-//  Created by WBI Innovations LLC on 6/8/19.
-//  Copyright © 2019 WBI Innovations LLC. All rights reserved.
+//  Created by Roberto Heligon on 6/8/19.
+//  Copyright © 2019 Roberto Heligon. All rights reserved.
 //
 
 import UIKit

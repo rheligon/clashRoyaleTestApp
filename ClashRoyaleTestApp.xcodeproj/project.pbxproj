@@ -8,20 +8,24 @@
 
 /* Begin PBXBuildFile section */
 		195A033822AC8589006AC05C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 195A033722AC8589006AC05C /* AppDelegate.swift */; };
-		195A033A22AC8589006AC05C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 195A033922AC8589006AC05C /* ViewController.swift */; };
+		195A033A22AC8589006AC05C /* InfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 195A033922AC8589006AC05C /* InfoViewController.swift */; };
 		195A033D22AC8589006AC05C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 195A033B22AC8589006AC05C /* Main.storyboard */; };
 		195A033F22AC858C006AC05C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 195A033E22AC858C006AC05C /* Assets.xcassets */; };
 		195A034222AC858C006AC05C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 195A034022AC858C006AC05C /* LaunchScreen.storyboard */; };
+		195A034B22AC9982006AC05C /* ShowCardsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 195A034A22AC9982006AC05C /* ShowCardsViewController.swift */; };
+		195A034E22AC9A00006AC05C /* CardsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 195A034D22AC9A00006AC05C /* CardsModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		195A033422AC8589006AC05C /* clashRoyaleTestApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = clashRoyaleTestApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		195A033422AC8589006AC05C /* ClashRoyaleTestApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ClashRoyaleTestApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		195A033722AC8589006AC05C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		195A033922AC8589006AC05C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		195A033922AC8589006AC05C /* InfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoViewController.swift; sourceTree = "<group>"; };
 		195A033C22AC8589006AC05C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		195A033E22AC858C006AC05C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		195A034122AC858C006AC05C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		195A034322AC858C006AC05C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		195A034A22AC9982006AC05C /* ShowCardsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShowCardsViewController.swift; sourceTree = "<group>"; };
+		195A034D22AC9A00006AC05C /* CardsModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardsModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -38,7 +42,7 @@
 		195A032B22AC8589006AC05C = {
 			isa = PBXGroup;
 			children = (
-				195A033622AC8589006AC05C /* clashRoyaleTestApp */,
+				195A033622AC8589006AC05C /* ClashRoyaleTestApp */,
 				195A033522AC8589006AC05C /* Products */,
 			);
 			sourceTree = "<group>";
@@ -46,30 +50,48 @@
 		195A033522AC8589006AC05C /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				195A033422AC8589006AC05C /* clashRoyaleTestApp.app */,
+				195A033422AC8589006AC05C /* ClashRoyaleTestApp.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		195A033622AC8589006AC05C /* clashRoyaleTestApp */ = {
+		195A033622AC8589006AC05C /* ClashRoyaleTestApp */ = {
 			isa = PBXGroup;
 			children = (
 				195A033722AC8589006AC05C /* AppDelegate.swift */,
-				195A033922AC8589006AC05C /* ViewController.swift */,
+				195A034922AC900F006AC05C /* Controllers */,
+				195A034C22AC99EB006AC05C /* Model */,
 				195A033B22AC8589006AC05C /* Main.storyboard */,
 				195A033E22AC858C006AC05C /* Assets.xcassets */,
 				195A034022AC858C006AC05C /* LaunchScreen.storyboard */,
 				195A034322AC858C006AC05C /* Info.plist */,
 			);
-			path = clashRoyaleTestApp;
+			path = ClashRoyaleTestApp;
+			sourceTree = "<group>";
+		};
+		195A034922AC900F006AC05C /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				195A033922AC8589006AC05C /* InfoViewController.swift */,
+				195A034A22AC9982006AC05C /* ShowCardsViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		195A034C22AC99EB006AC05C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				195A034D22AC9A00006AC05C /* CardsModel.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		195A033322AC8589006AC05C /* clashRoyaleTestApp */ = {
+		195A033322AC8589006AC05C /* ClashRoyaleTestApp */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 195A034622AC858C006AC05C /* Build configuration list for PBXNativeTarget "clashRoyaleTestApp" */;
+			buildConfigurationList = 195A034622AC858C006AC05C /* Build configuration list for PBXNativeTarget "ClashRoyaleTestApp" */;
 			buildPhases = (
 				195A033022AC8589006AC05C /* Sources */,
 				195A033122AC8589006AC05C /* Frameworks */,
@@ -79,9 +101,9 @@
 			);
 			dependencies = (
 			);
-			name = clashRoyaleTestApp;
+			name = ClashRoyaleTestApp;
 			productName = clashRoyaleTestApp;
-			productReference = 195A033422AC8589006AC05C /* clashRoyaleTestApp.app */;
+			productReference = 195A033422AC8589006AC05C /* ClashRoyaleTestApp.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -99,7 +121,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 195A032F22AC8589006AC05C /* Build configuration list for PBXProject "clashRoyaleTestApp" */;
+			buildConfigurationList = 195A032F22AC8589006AC05C /* Build configuration list for PBXProject "ClashRoyaleTestApp" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -112,7 +134,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				195A033322AC8589006AC05C /* clashRoyaleTestApp */,
+				195A033322AC8589006AC05C /* ClashRoyaleTestApp */,
 			);
 		};
 /* End PBXProject section */
@@ -135,8 +157,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				195A033A22AC8589006AC05C /* ViewController.swift in Sources */,
+				195A033A22AC8589006AC05C /* InfoViewController.swift in Sources */,
+				195A034E22AC9A00006AC05C /* CardsModel.swift in Sources */,
 				195A033822AC8589006AC05C /* AppDelegate.swift in Sources */,
+				195A034B22AC9982006AC05C /* ShowCardsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -289,7 +313,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.rheligon.clashRoyaleTestApp;
+				PRODUCT_BUNDLE_IDENTIFIER = com.rheligon.ClashRoyaleTestApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -307,7 +331,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.rheligon.clashRoyaleTestApp;
+				PRODUCT_BUNDLE_IDENTIFIER = com.rheligon.ClashRoyaleTestApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -317,7 +341,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		195A032F22AC8589006AC05C /* Build configuration list for PBXProject "clashRoyaleTestApp" */ = {
+		195A032F22AC8589006AC05C /* Build configuration list for PBXProject "ClashRoyaleTestApp" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				195A034422AC858C006AC05C /* Debug */,
@@ -326,7 +350,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		195A034622AC858C006AC05C /* Build configuration list for PBXNativeTarget "clashRoyaleTestApp" */ = {
+		195A034622AC858C006AC05C /* Build configuration list for PBXNativeTarget "ClashRoyaleTestApp" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				195A034722AC858C006AC05C /* Debug */,
