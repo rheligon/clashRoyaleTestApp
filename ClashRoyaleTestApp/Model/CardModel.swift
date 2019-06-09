@@ -1,5 +1,5 @@
 //
-//  Cards.swift
+//  Card.swift
 //  ClashRoyaleTestApp
 //
 //  Created by Roberto Heligon on 6/8/19.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-struct Cards: Codable {
+struct Card: Codable {
     var _id: String
     var idName: String
     var rarity: String

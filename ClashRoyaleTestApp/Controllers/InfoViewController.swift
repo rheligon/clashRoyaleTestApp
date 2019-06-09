@@ -20,6 +20,5 @@ class InfoViewController: UIViewController {
     func initButton(){
         enterButton.layer.cornerRadius = 10
     }
-    
 }
 

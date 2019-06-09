@@ -13,7 +13,8 @@
 		195A033F22AC858C006AC05C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 195A033E22AC858C006AC05C /* Assets.xcassets */; };
 		195A034222AC858C006AC05C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 195A034022AC858C006AC05C /* LaunchScreen.storyboard */; };
 		195A034B22AC9982006AC05C /* ShowCardsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 195A034A22AC9982006AC05C /* ShowCardsViewController.swift */; };
-		195A034E22AC9A00006AC05C /* CardsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 195A034D22AC9A00006AC05C /* CardsModel.swift */; };
+		195A034E22AC9A00006AC05C /* CardModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 195A034D22AC9A00006AC05C /* CardModel.swift */; };
+		195A035022ACA45A006AC05C /* CardTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 195A034F22ACA45A006AC05C /* CardTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,7 +26,8 @@
 		195A034122AC858C006AC05C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		195A034322AC858C006AC05C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		195A034A22AC9982006AC05C /* ShowCardsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShowCardsViewController.swift; sourceTree = "<group>"; };
-		195A034D22AC9A00006AC05C /* CardsModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardsModel.swift; sourceTree = "<group>"; };
+		195A034D22AC9A00006AC05C /* CardModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardModel.swift; sourceTree = "<group>"; };
+		195A034F22ACA45A006AC05C /* CardTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +76,7 @@
 			children = (
 				195A033922AC8589006AC05C /* InfoViewController.swift */,
 				195A034A22AC9982006AC05C /* ShowCardsViewController.swift */,
+				195A034F22ACA45A006AC05C /* CardTableViewCell.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -81,7 +84,7 @@
 		195A034C22AC99EB006AC05C /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				195A034D22AC9A00006AC05C /* CardsModel.swift */,
+				195A034D22AC9A00006AC05C /* CardModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -157,8 +160,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				195A035022ACA45A006AC05C /* CardTableViewCell.swift in Sources */,
 				195A033A22AC8589006AC05C /* InfoViewController.swift in Sources */,
-				195A034E22AC9A00006AC05C /* CardsModel.swift in Sources */,
+				195A034E22AC9A00006AC05C /* CardModel.swift in Sources */,
 				195A033822AC8589006AC05C /* AppDelegate.swift in Sources */,
 				195A034B22AC9982006AC05C /* ShowCardsViewController.swift in Sources */,
 			);
