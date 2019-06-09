@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import SwiftyJSON
 
 struct Card: Codable {
     var _id: String
@@ -33,6 +34,27 @@ struct Card: Codable {
         self.arena = arena
         self.order = order
         self.__v = __v
+    }
+    
+    static func buildCard(json: JSON) -> Card? {
+        if let _id = json["_id"].string,
+            let type = json["type"].string,
+            let name = json["name"].string,
+            let idName = json["idName"].string,
+            let description = json["description"].string {
+            
+            //Optional, since they are not needed
+            let rarity = json["rarity"].string ?? ""
+            let elixirCost = json["elixirCost"].int ?? 0
+            let copyId = json["copyId"].int ?? 0
+            let arena = json["arena"].int ?? 0
+            let order = json["order"].int ?? 0
+            let __v = json["__v"].int ?? 0
+            
+            return Card(_id: _id, idName: idName, rarity: rarity, type: type, name: name, description: description, elixirCost: elixirCost, copyId: copyId, arena: arena, order: order, __v: __v)
+        }else{
+            return nil
+        }
     }
 }
 

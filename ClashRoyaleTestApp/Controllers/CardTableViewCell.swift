@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import SDWebImage
 
 class CardTableViewCell: UITableViewCell {
     
@@ -21,6 +22,17 @@ class CardTableViewCell: UITableViewCell {
     func setCard(card: Card){
         cardType.text = card.type
         cardName.text = card.name
+        
+        let url  = ApiHandler().serverURL + ServerMethods.GetImage.rawValue + card.idName + ".png"
+        
+        cardImage.sd_setShowActivityIndicatorView(true)
+        cardImage.sd_setIndicatorStyle(.gray)
+        cardImage.sd_setImage(with: URL(string: url), placeholderImage: UIImage(named: getDefaultProfilePictureName()))
+    }
+    
+    //Function to return the default image
+    func getDefaultProfilePictureName() -> String {
+        return "ClashRoyaleLogo"
     }
 }
 
