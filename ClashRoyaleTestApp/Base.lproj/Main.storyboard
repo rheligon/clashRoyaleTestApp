@@ -39,37 +39,42 @@
                                             <constraint firstItem="C8D-83-oa1" firstAttribute="centerX" secondItem="ybH-Wr-sVL" secondAttribute="centerX" id="v9C-y4-PYp"/>
                                         </constraints>
                                     </view>
-                                    <stackView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="200" verticalCompressionResistancePriority="800" distribution="fillProportionally" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="fpe-Lb-39T" userLabel="Information Stack View">
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="fpe-Lb-39T" userLabel="Information Stack View">
                                         <rect key="frame" x="49" y="90" width="217.5" height="349"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="gVW-eV-piK" userLabel="Labels Stack View">
                                                 <rect key="frame" x="0.0" y="0.0" width="65.5" height="349"/>
                                                 <subviews>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nombres:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hz8-7q-4yW" userLabel="First Names">
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nombres:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hz8-7q-4yW" userLabel="First Names">
                                                         <rect key="frame" x="0.0" y="0.0" width="65.5" height="87.5"/>
                                                         <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="15"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Apellidos:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g80-TO-uZL" userLabel="Last Names">
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Apellidos:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g80-TO-uZL" userLabel="Last Names">
                                                         <rect key="frame" x="0.0" y="87.5" width="65.5" height="87"/>
                                                         <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="15"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="E-mail:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cXy-w6-u9W" userLabel="Email">
-                                                        <rect key="frame" x="9" y="174.5" width="47" height="87.5"/>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="E-mail:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cXy-w6-u9W" userLabel="Email">
+                                                        <rect key="frame" x="0.0" y="174.5" width="65.5" height="87.5"/>
                                                         <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="15"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Fecha:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fVc-8e-pUS" userLabel="Fecha">
-                                                        <rect key="frame" x="9.5" y="262" width="46" height="87"/>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Fecha:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fVc-8e-pUS" userLabel="Fecha">
+                                                        <rect key="frame" x="0.0" y="262" width="65.5" height="87"/>
                                                         <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="15"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                 </subviews>
+                                                <constraints>
+                                                    <constraint firstItem="cXy-w6-u9W" firstAttribute="leading" secondItem="g80-TO-uZL" secondAttribute="leading" id="D6Q-3M-4JH"/>
+                                                    <constraint firstItem="hz8-7q-4yW" firstAttribute="leading" secondItem="g80-TO-uZL" secondAttribute="leading" id="UWR-lO-O0x"/>
+                                                    <constraint firstItem="fVc-8e-pUS" firstAttribute="leading" secondItem="g80-TO-uZL" secondAttribute="leading" id="Vzy-G3-P0m"/>
+                                                </constraints>
                                             </stackView>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="Hsx-QJ-fp0">
                                                 <rect key="frame" x="80.5" y="0.0" width="137" height="349"/>
