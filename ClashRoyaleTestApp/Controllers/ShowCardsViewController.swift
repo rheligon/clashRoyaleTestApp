@@ -56,6 +56,8 @@ extension ShowCardsViewController: UITableViewDelegate, UITableViewDataSource {
                 navigator.pushViewController(viewController, animated: true)
             }
         }
+        
+        tableView.deselectRow(at: indexPath, animated: true)
     }
 }
 
