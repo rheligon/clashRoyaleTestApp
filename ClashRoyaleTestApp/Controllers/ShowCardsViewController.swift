@@ -49,14 +49,22 @@ extension ShowCardsViewController: UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        print(indexPath)
+        let storyBoard = UIStoryboard(name: "Main", bundle: nil)
+        if let viewController = storyBoard.instantiateViewController(withIdentifier: "CardDetailViewController") as? CardDetailViewController {
+            viewController.card = cards[indexPath.row]
+            if let navigator = navigationController {
+                navigator.pushViewController(viewController, animated: true)
+            }
+        }
     }
 }
 
 extension ShowCardsViewController: APIResponseDelegate {
     func success(response: Any, responseFrom: ServerMethods?) {
         if let cardsArray = response as? [Card] {
-            self.cards = cardsArray
+            
+            //Init cards with the array, sorted alphabetically
+            self.cards = cardsArray.sorted(by: { $0.name < $1.name })
             
             self.activityIndicator.isHidden = true
             self.tableView.isHidden = false

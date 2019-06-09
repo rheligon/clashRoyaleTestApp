@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		03950D5B13C8742FBA0506C0 /* Pods_ClashRoyaleTestApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83245DCBB1F1290F2AFDE274 /* Pods_ClashRoyaleTestApp.framework */; };
 		190E9B9222ACAA8200AEF638 /* ApiHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 190E9B9122ACAA8200AEF638 /* ApiHandler.swift */; };
+		190E9B9422ACB70B00AEF638 /* CardDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 190E9B9322ACB70B00AEF638 /* CardDetailViewController.swift */; };
+		190E9B9622ACB74800AEF638 /* CardDetailTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 190E9B9522ACB74800AEF638 /* CardDetailTableViewCell.swift */; };
 		195A033822AC8589006AC05C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 195A033722AC8589006AC05C /* AppDelegate.swift */; };
 		195A033A22AC8589006AC05C /* InfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 195A033922AC8589006AC05C /* InfoViewController.swift */; };
 		195A033D22AC8589006AC05C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 195A033B22AC8589006AC05C /* Main.storyboard */; };
@@ -22,6 +24,8 @@
 /* Begin PBXFileReference section */
 		1692CA508668C4FBCF6507DE /* Pods-ClashRoyaleTestApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ClashRoyaleTestApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-ClashRoyaleTestApp/Pods-ClashRoyaleTestApp.release.xcconfig"; sourceTree = "<group>"; };
 		190E9B9122ACAA8200AEF638 /* ApiHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApiHandler.swift; sourceTree = "<group>"; };
+		190E9B9322ACB70B00AEF638 /* CardDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardDetailViewController.swift; sourceTree = "<group>"; };
+		190E9B9522ACB74800AEF638 /* CardDetailTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardDetailTableViewCell.swift; sourceTree = "<group>"; };
 		195A033422AC8589006AC05C /* ClashRoyaleTestApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ClashRoyaleTestApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		195A033722AC8589006AC05C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		195A033922AC8589006AC05C /* InfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoViewController.swift; sourceTree = "<group>"; };
@@ -57,6 +61,15 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		190E9B9722ACB75600AEF638 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				195A034F22ACA45A006AC05C /* CardTableViewCell.swift */,
+				190E9B9522ACB74800AEF638 /* CardDetailTableViewCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
 		195A032B22AC8589006AC05C = {
 			isa = PBXGroup;
 			children = (
@@ -80,6 +93,7 @@
 			children = (
 				195A033722AC8589006AC05C /* AppDelegate.swift */,
 				190E9B9122ACAA8200AEF638 /* ApiHandler.swift */,
+				190E9B9722ACB75600AEF638 /* Cells */,
 				195A034922AC900F006AC05C /* Controllers */,
 				195A034C22AC99EB006AC05C /* Model */,
 				195A033B22AC8589006AC05C /* Main.storyboard */,
@@ -95,7 +109,7 @@
 			children = (
 				195A033922AC8589006AC05C /* InfoViewController.swift */,
 				195A034A22AC9982006AC05C /* ShowCardsViewController.swift */,
-				195A034F22ACA45A006AC05C /* CardTableViewCell.swift */,
+				190E9B9322ACB70B00AEF638 /* CardDetailViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -248,12 +262,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				190E9B9622ACB74800AEF638 /* CardDetailTableViewCell.swift in Sources */,
 				195A035022ACA45A006AC05C /* CardTableViewCell.swift in Sources */,
 				195A033A22AC8589006AC05C /* InfoViewController.swift in Sources */,
 				195A034E22AC9A00006AC05C /* CardModel.swift in Sources */,
 				195A033822AC8589006AC05C /* AppDelegate.swift in Sources */,
 				190E9B9222ACAA8200AEF638 /* ApiHandler.swift in Sources */,
 				195A034B22AC9982006AC05C /* ShowCardsViewController.swift in Sources */,
+				190E9B9422ACB70B00AEF638 /* CardDetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
