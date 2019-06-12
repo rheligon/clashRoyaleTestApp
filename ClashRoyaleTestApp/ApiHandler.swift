@@ -39,14 +39,13 @@ class ApiHandler: NSObject {
                 let resJsonVar = JSON(responseData.result.value!)
                 
                 if let cardsArray = (resJsonVar.array?.compactMap { return Card.buildCard(json: $0) }) {
-                    
                     DispatchQueue.main.async {
                         delegate?.success(response: cardsArray, responseFrom: ServerMethods.GetCards)
                     }
-
                 }else{
                     DispatchQueue.main.async {
-                        delegate?.success(response: [], responseFrom: ServerMethods.GetCards)
+                        let msg = "There has been a serialization error, please try again"
+                        delegate?.failure(error: msg, delegate: delegate, api: self)
                     }
                 }
             }
@@ -59,25 +58,20 @@ class ApiHandler: NSObject {
         if let error = response.result.error as? AFError {
             switch error {
             case .invalidURL(let url):
-                return "Invalid URL: \(url) - \(error.localizedDescription)"
+                return "Invalid URL: \(url)"
             case .parameterEncodingFailed:
-                return "Parameter encoding failed: \(error.localizedDescription)"
+                return "Parameter encoding failed"
             case .multipartEncodingFailed:
-                return "Multipart encoding failed: \(error.localizedDescription)"
+                return "Multipart encoding failed"
             case .responseValidationFailed:
-                return "Response validation failed: \(error.localizedDescription)"
+                return "Response validation failed"
             case .responseSerializationFailed:
-                return "Response serialization failed: \(error.localizedDescription)"
+                return "Response serialization failed"
             }
-        } else if let error = response.result.error as? URLError {
-            return "URLError occurred: \(error)"
+        } else if let _ = response.result.error as? URLError {
+            return "URL Error occurred"
         } else {
-            if let err = response.result.error{
-                return "Unknown error: \(err)"
-            }else{
-                let msg = "Contact Administrator"
-                return msg
-            }
+            return "Unknown error, please contact the administrator"
         }
     }
 }
@@ -92,9 +86,6 @@ protocol APIResponseDelegate:class {
 //MARK: - Define failure function so It's optional in the delegates
 extension APIResponseDelegate {
     func failure(error: String, delegate: APIResponseDelegate?, api: ApiHandler?) {
-        
-        print("---------------- HUBO UN ERROR ----------------")
-        print(error)
         
         let vc: UIViewController? = delegate as? UIViewController
         let alert = UIAlertController(title: "Error", message: error, preferredStyle: UIAlertController.Style.alert)
